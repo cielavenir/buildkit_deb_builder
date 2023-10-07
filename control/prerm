@@ -1,0 +1,4 @@
+#!/bin/sh
+systemctl stop buildkit.socket
+systemctl disable buildkit.service
+systemctl disable buildkit.socket

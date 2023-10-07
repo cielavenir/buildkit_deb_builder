@@ -1,0 +1,4 @@
+#!/bin/sh
+systemctl enable buildkit.socket
+systemctl enable buildkit.service
+systemctl start buildkit.socket

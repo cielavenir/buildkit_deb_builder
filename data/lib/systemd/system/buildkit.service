@@ -1,0 +1,14 @@
+[Unit]
+Description=BuildKit
+Requires=buildkit.socket
+After=buildkit.socket
+Documentation=https://github.com/moby/buildkit
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/buildkitd --containerd-worker=true --oci-worker=false --containerd-worker-namespace=buildkit --addr fd://
+
+# containerd-worker-namespace should be moby, but it is not ok due to https://github.com/rancher-sandbox/rancher-desktop/issues/2584
+
+[Install]
+WantedBy=multi-user.target
