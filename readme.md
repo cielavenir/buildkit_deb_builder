@@ -4,6 +4,8 @@ buildkit debian / ubuntu package builder
 
 Implements https://github.com/moby/buildkit#systemd-socket-activation as debian control/postinst.
 
+Note that this expects containerd.io package is installed.
+
 ## How to run it
 
 1. Update build.sh VERSION= if necessary.
