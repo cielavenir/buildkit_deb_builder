@@ -16,4 +16,4 @@ Note that this expects containerd.io package is installed.
 
 buildkitd does not find local image as FROM= if the namespace is not `buildkit`. So I set the namespace to `buildkit` for now.
 
-Please see https://github.com/rancher-sandbox/rancher-desktop/issues/2584#issuecomment-1475232068 .
+Please see https://github.com/containerd/nerdctl/issues/2550 .
